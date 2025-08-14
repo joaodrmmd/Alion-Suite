@@ -1,5 +1,4 @@
-
-  <p align="center">
+<p align="center">
   <img src="media/icon.png" alt="Alion Suite Logo" width="500">
 </p>
 
@@ -30,12 +29,12 @@ The **Alion Suite** is the result of this evolution. It's a sophisticated applic
 
 The Alion Suite is composed of four distinct versions, each with its own focus and visual identity.
 
-| Logo | Version | Target OS | Description |
-| :--- | :--- | :--- | :--- |
-| ![Alion Apex Logo](media/logo_apex.png) | **Alion APEX** | Linux | A collection of tools for Linux system administration, optimization, and package management. |
-| ![Alion Forge Logo](media/logo_forge.png) | **Alion Forge** | Windows | The spiritual successor to Alion V1, rebuilt for the modern Windows environment with powerful PowerShell commands. |
-| ![Alion Brew Logo](media/logo_brew.png) | **Alion Brew** | macOS | A curated set of tools for macOS users, leveraging Homebrew and native system capabilities. |
-| ![Alion Defender Logo](media/logo_defender.png) | **Alion Defender** | Any (Security) | A specialized toolkit for Blue Team security operations, including network analysis and system defense tools. |
+| Logo                                                                                                  | Version          | Target OS      | Description                                                                                             |
+| :---------------------------------------------------------------------------------------------------- | :--------------- | :------------- | :------------------------------------------------------------------------------------------------------ |
+| <img src="media/logo_apex.png" alt="Alion Apex Logo" width="150">                                      | **Alion APEX**   | Linux          | A collection of tools for Linux system administration, optimization, and package management.           |
+| <img src="media/logo_forge.png" alt="Alion Forge Logo" width="150">                                     | **Alion Forge**  | Windows        | The spiritual successor to Alion V1, rebuilt for the modern Windows environment with powerful PowerShell commands. |
+| <img src="media/logo_brew.png" alt="Alion Brew Logo" width="150">                                       | **Alion Brew**   | macOS          | A curated set of tools for macOS users, leveraging Homebrew and native system capabilities.             |
+| <img src="media/logo_defender.png" alt="Alion Defender Logo" width="150">                           | **Alion Defender** | Any (Security) | A specialized toolkit for Blue Team security operations, including network analysis and system defense tools. |
 
 ---
 
@@ -45,38 +44,38 @@ Getting started with Alion Suite is easy. We provide a simple one-line command f
 
 ### For Windows (PowerShell)
 
-Open PowerShell and run the following command:
+Open PowerShell and run:
+
 ```powershell
-irm [https://raw.githubusercontent.com/YOUR_USERNAME/Alion-Apex/main/install.ps1](https://raw.githubusercontent.com/YOUR_USERNAME/Alion-Apex/main/install.ps1) | iex
+irm https://raw.githubusercontent.com/joaodrmmd/Alion-Suite/main/install.ps1 | iex
+```
 
-For Linux & macOS (Bash)
+### For Linux & macOS (Bash)
 
-Open your terminal and run the following command:
-Bash
+Open your terminal and run:
+```bash
+curl -sS https://raw.githubusercontent.com/joaodrmmd/Alion-Suite/main/install.sh | sudo bash
+```
 
-curl -sS [https://raw.githubusercontent.com/YOUR_USERNAME/Alion-Apex/main/install.sh](https://raw.githubusercontent.com/YOUR_USERNAME/Alion-Apex/main/install.sh) | sudo bash
 
-(Note: The installer scripts are a future goal. For now, users must run the project from source.)
+*Note: The installer scripts are a future goal. For now, users must run the project from source.*
 
-Running from Source (for Developers)
+### Running from Source (for Developers)
 
-    Clone the repository:
-    Bash
-
-git clone [https://github.com/YOUR_USERNAME/Alion-Apex.git](https://github.com/YOUR_USERNAME/Alion-Apex.git)
-cd Alion-Apex
-
+Clone the repository:
+``` 
+git clone https://github.com/joaodrmmd/Alion-Suite.git
+cd Alion-Suite
+```
 Install dependencies:
-Bash
-
+```
 pip install PySide6 Pillow
-
+```
 Run the launcher:
-Bash
-
-    python launcher.py
-
-Contributing
+```
+python launcher.py
+```
+### Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -92,12 +91,10 @@ If you have a suggestion that would make this better, please fork the repo and c
 
     Open a Pull Request
 
-License
+### License
 
 Distributed under the MIT License. See LICENSE for more information.
 
-Contact
+### Contact
 
-r3du0x - [Your Email or Project Link]
-
-Project Link: https://github.com/joaodrmmd/AlionV1
+Project Link: https://github.com/joaodrmmd/Alion-Suite
