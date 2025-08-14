@@ -8,7 +8,6 @@ import tools as alion_tools
 import localization
 
 class VersionPanel(QFrame):
-    # Sinais para comunicar com a janela principal
     mouse_entered = Signal(QFrame)
     mouse_left = Signal()
 
@@ -177,14 +176,14 @@ class LauncherWindow(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setQuitOnLastWindowClosed(False)
-# 1. Importa a classe QIcon
+
     from PySide6.QtGui import QIcon 
 
-    # 2. Define o caminho para o ícone
+
     script_dir = Path(__file__).parent
     icon_path = script_dir / "media" / "icon.png"
 
-    # 3. Aplica o ícone à aplicação inteira
+   
     app.setWindowIcon(QIcon(str(icon_path)))
     window = LauncherWindow()
     window.show()

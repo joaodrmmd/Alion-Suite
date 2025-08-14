@@ -1,4 +1,4 @@
-# localization.py
+
 
 TRANSLATIONS = {
     "pt": {

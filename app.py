@@ -138,7 +138,7 @@ class MainWindow(QMainWindow):
         self.queue_timer.start(100)
 
     def _populate_sidebar(self):
-    # O código para criar o logo, botão voltar e busca continua o mesmo
+    
         try:
             script_dir = Path(__file__).parent
             logo_path = script_dir / "media" / self.current_config['logo']
@@ -187,26 +187,25 @@ class MainWindow(QMainWindow):
         self.tree.itemClicked.connect(self._on_tree_item_clicked)
         self.sidebar_layout.addWidget(self.tree)
         
-        # Adiciona um espaço flexível que empurra tudo que vem depois para o fundo
+        
         self.sidebar_layout.addStretch()
 
-        # Botão de avaliação do GitHub
+        
         github_button = QPushButton(localization.get_string("evaluate_github", lang=self.LANGUAGE))
         github_button.setObjectName("github_button")
         github_button.clicked.connect(self._open_github)
         self.sidebar_layout.addWidget(github_button)
 
-        # --- NOVO: Label de crédito adicionado aqui ---
+        
         dev_credit_label = QLabel("Developed by r3du0x")
         dev_credit_label.setObjectName("dev_credit_label")
         dev_credit_label.setAlignment(Qt.AlignCenter)
         self.sidebar_layout.addWidget(dev_credit_label)
 
-        # --- LINHA REMOVIDA: A árvore já foi adicionada anteriormente e estava duplicada ---
-        # self.sidebar_layout.addWidget(self.tree)
+       
 
     def _create_footer(self):
-        """Rodapé sem o elemento central."""
+        
         footer_frame = QFrame()
         footer_frame.setObjectName("footer")
         footer_layout = QHBoxLayout(footer_frame)
@@ -222,9 +221,9 @@ class MainWindow(QMainWindow):
         label_pkg.setObjectName("footer_label")
         label_pkg.setAlignment(Qt.AlignRight)
         
-        # Layout simplificado com apenas os elementos da esquerda e direita
+        
         footer_layout.addWidget(label_os)
-        footer_layout.addStretch() # Espaçador flexível no meio
+        footer_layout.addStretch() 
         footer_layout.addWidget(label_pkg)
         
         return footer_frame
