@@ -8,7 +8,7 @@
 
 ## The Evolution: From V1 to Alion Suite
 
-[cite_start]This project started as **Alion V1**, a simple yet effective Windows Batch (`.bat`) script designed to automate common system tasks. [cite: 1] Recognizing the need for a more robust and cross-platform solution, the project was completely rebuilt from the ground up in Python.
+This project started as **Alion V1**, a simple yet effective Windows Batch (`.bat`) script designed to automate common system tasks. Recognizing the need for a more robust and cross-platform solution, the project was completely rebuilt from the ground up in Python.
 
 The **Alion Suite** is the result of this evolution. It's a sophisticated application built with **PySide6** that offers specialized toolsets for different operating systems and purposes, all accessible from a single, dynamic launcher.
 
