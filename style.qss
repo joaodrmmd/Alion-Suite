@@ -1,0 +1,169 @@
+/* === ESTILOS GERAIS === */
+QWidget {
+    color: #cbd5e1;
+    font-family: "Courier New";
+}
+
+/* === ESTILOS DO LAUNCHER === */
+QMainWindow {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #000000, stop: 1 #121212);
+}
+
+QFrame#version_panel {
+    border: 1px solid #4b5563;
+    border-radius: 15px;
+    background-color: #111827;
+}
+
+QLabel#gif_label {
+    /* Arredonda os cantos do GIF para não vazar */
+    border-radius: 14px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Força o GIF a preencher o painel */
+    background-size: cover; 
+}
+
+/* Camada escura sobre o GIF para legibilidade */
+QFrame#overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Filtro preto transparente */
+    border-radius: 14px; /* Também precisa ser arredondado */
+}
+
+QFrame#panel_apex > QLabel#gif_label { background-image: url(media/apex_bg.gif); }
+QFrame#panel_forge > QLabel#gif_label { background-image: url(media/forge_bg.gif); }
+QFrame#panel_defender > QLabel#gif_label { background-image: url(media/defender_bg.gif); }
+QFrame#panel_brew > QLabel#gif_label { background-image: url(media/brew_bg.gif); }
+
+QPushButton#access_button {
+    background-color: rgba(30, 30, 30, 0.7);
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #4b5563;
+}
+QPushButton#access_button:hover {
+    background-color: rgba(75, 85, 99, 0.9);
+    border: 1px solid #9ca3af;
+}
+
+QFrame#launcher_footer {
+    background-color: transparent;
+}
+QLabel, QLabel#lang_label { 
+    background-color: transparent; 
+    color: #9ca3af; 
+}
+QComboBox {
+    background-color: #1f2937;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    padding: 5px;
+    min-width: 120px;
+    color: #e2e8f0;
+}
+QLabel#panel_subtitle {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+/* === ESTILOS DO APP PRINCIPAL === */
+QFrame#sidebar {
+    background-color: #0d0d0d;
+    border-right: 1px solid #2c2c2c;
+}
+QFrame#content_area {
+    background-color: #000000;
+}
+QFrame#footer {
+    background-color: #0d0d0d;
+    border-top: 1px solid #2c2c2c;
+    min-height: 30px;
+    max-height: 30px;
+}
+QLabel#footer_label {
+    color: THEME_COLOR_PLACEHOLDER;
+    font-size: 11px;
+    font-weight: bold;
+}
+QLabel#sidebar_logo {
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+QPushButton#back_button, QPushButton#github_button {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+}
+QPushButton#back_button { margin-bottom: 15px; }
+QPushButton#github_button { color: THEME_COLOR_PLACEHOLDER; }
+QPushButton#back_button:hover, QPushButton#github_button:hover {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+QLineEdit#search_bar {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 8px;
+    color: #e2e8f0;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+QTreeWidget {
+    border: none;
+    background-color: transparent;
+}
+QTreeWidget::item { padding: 8px; }
+QTreeWidget::item:selected { background-color: #2c2c2c; }
+/* Setas da árvore (restauradas) */
+QTreeWidget::branch:has-children:!open {
+    image: url(media/arrow_right.png);
+}
+QTreeWidget::branch:has-children:open {
+    image: url(media/arrow_down.png);
+}
+QTreeWidget > QTreeWidgetItem {
+    font-weight: bold;
+    color: THEME_COLOR_PLACEHOLDER;
+    font-size: 12px;
+    padding-top: 15px;
+}
+QLabel#page_title {
+    font-size: 28px;
+    font-weight: bold;
+    color: THEME_COLOR_PLACEHOLDER;
+    padding-bottom: 15px;
+}
+QPushButton#run_button {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid #333333;
+}
+QPushButton#run_button:hover {
+    border-color: THEME_COLOR_PLACEHOLDER;
+    color: THEME_COLOR_PLACEHOLDER;
+}
+QTextEdit#console {
+    background-color: #0d0d0d;
+    color: #94a3b8;
+    font-family: "monospace";
+    border-radius: 8px;
+    border: 1px solid #2c2c2c;
+}
+QLabel#dev_credit_label {
+    background-color: transparent;
+    color: #64748b;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
